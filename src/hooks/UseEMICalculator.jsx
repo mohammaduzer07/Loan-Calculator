@@ -12,12 +12,3 @@ export const useEMICalculator = () => {
 
   return { calculateEMI };
 };
-
-
-
-// export default function useEMICalculator(principal, annualRate, termYears) {
-//     const r = annualRate / 12 / 100;
-//     const n = termYears * 12;
-//     const emi = principal * r * Math.pow(1 + r, n) / (Math.pow(1 + r, n) - 1);
-//     return parseFloat(emi.toFixed(2));
-//   }

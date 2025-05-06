@@ -1,10 +1,9 @@
 import { AppBar, Toolbar, Typography, Button, Switch, useTheme as muiUseTheme } from '@mui/material';
 import { Link } from 'react-router-dom';
-import { useTheme } from '../context/ThemeContext'; // Your custom hook
+import { useTheme } from '../context/ThemeContext'; // custom hook
 
 const Header = () => {
-  const { darkMode, toggleTheme } = useTheme(); // Your custom theme context
-  const muiTheme = muiUseTheme(); // MUI theme if needed
+  const { darkMode, toggleTheme } = useTheme(); // custom theme context
   
   return (
     <AppBar position="static" sx={{ mb: 4 }}>

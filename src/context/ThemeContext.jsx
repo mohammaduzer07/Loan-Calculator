@@ -17,7 +17,6 @@ export const ThemeProvider = ({ children }) => {
   );
 };
 
-// Add this export for the useTheme hook
 export const useTheme = () => {
   const context = useContext(ThemeContext);
   if (!context) {
@@ -25,31 +24,4 @@ export const useTheme = () => {
   }
   return context;
 };
-
-
-
-// import React, { createContext, useState } from "react";
-// import { createTheme } from "@mui/material/styles";
-
-// export const ThemeContext = createContext();
-
-// export default function ThemeContextProvider({ children }) {
-//   const [mode, setMode] = useState("light");
-
-//   const toggleTheme = () => {
-//     setMode(prev => (prev === "light" ? "dark" : "light"));
-//   };
-
-//   const theme = createTheme({
-//     palette: {
-//       mode,
-//     },
-//   });
-
-//   return (
-//     <ThemeContext.Provider value={{ mode, toggleTheme, theme }}>
-//       {children}
-//     </ThemeContext.Provider>
-//   );
-// }
 

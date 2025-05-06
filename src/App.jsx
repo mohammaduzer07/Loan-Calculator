@@ -10,7 +10,7 @@ import ErrorPage from './pages/ErrorPage';
 import getTheme from './styles/theme';
 
 function AppWrapper() {
-  const { darkMode } = useTheme(); // Now this is inside ThemeProvider
+  const { darkMode } = useTheme(); 
 
   return (
     <MuiThemeProvider theme={getTheme(darkMode)}>
@@ -39,34 +39,3 @@ function App() {
 }
 
 export default App;
-
-
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
-// import React, { useContext } from "react";
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import LoanForm from "./components/LoanForm";
-// import ErrorPage from "./components/ErrorPage";
-// import { ThemeProvider } from "@mui/material/styles";
-// import { ThemeContext } from "./context/ThemeContext";
-// import { Container } from "@mui/material";
-
-// function App() {
-//   const { theme } = useContext(ThemeContext);
-//   return (
-//     <ThemeProvider theme={theme}>
-//       <Router>
-//         <Container maxWidth="md" sx={{ py: 4 }}>
-//           <Routes>
-//             <Route path="/" element={<LoanForm />} />
-//             <Route path="*" element={<ErrorPage />} />
-//           </Routes>
-//         </Container>
-//       </Router>
-//     </ThemeProvider>
-//   );
-// }
-
-// export default App
